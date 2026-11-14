@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Small utilities for Vietnamese text: remove accents, slugify, read numbers as words."
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 authors = [{ name = "thienta-oss-lab contributors" }]
 
 [project.optional-dependencies]
@@ -21,7 +21,7 @@ dev = [
 
 [tool.ruff]
 line-length = 88
-target-version = "py310"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
