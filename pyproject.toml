@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vntext"
+version = "0.1.0"
+description = "Small utilities for Vietnamese text: remove accents, slugify, read numbers as words."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "thienta-oss-lab contributors" }]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.2.0",
+    "pytest-cov==7.1.0",
+    "ruff==0.17.5",
+    "pre-commit==4.7.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=vntext --cov-report=term-missing --cov-fail-under=90"
