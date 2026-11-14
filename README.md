@@ -17,7 +17,7 @@ pip install git+https://github.com/thienta-oss-lab/vntext.git
 ## Quick start
 
 ```python
-from vntext import remove_accents, slugfy, to_words
+from vntext import remove_accents, slugify, to_words
 
 remove_accents("Tiếng Việt")  # 'Tieng Viet'
 slugify("Xin chào Việt Nam!")  # 'xin-chao-viet-nam'
