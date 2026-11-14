@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Correct the readme import Quick start example
+
 ## [0.1.0] - 2026-11-14
 
 ### Added
